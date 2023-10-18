@@ -6,6 +6,8 @@
   scroll-behavior: smooth;
 }
 
+
+
 .navbar {
   background: #171616;
   height: 80px;
@@ -191,6 +193,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
 
 /* Hero Section */
 .hero {
