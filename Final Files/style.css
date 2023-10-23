@@ -261,6 +261,12 @@ html {
   padding: 5rem 0;
 }
 
+.section-3#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -390,6 +396,29 @@ html {
   text-align: center;
 }
 /* End of Section 4 */
+
+/* Contents */
+
+#content{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba (0,0,0, .30);
+  background: #727272;
+  visibility: hidden;
+  }
+
+#content.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* Contents */
 
 /* Responsive */
 @media (max-width: 1400px) {
