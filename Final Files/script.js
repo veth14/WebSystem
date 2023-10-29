@@ -29,4 +29,24 @@ document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
     });
 });
 
+
+
+
+document.getElementById('IObutton').addEventListener('click', function() {
+	
+	window.location.href = '/IOD/index.html';
+});
+
+document.getElementById('hardwarebutton').addEventListener('click', function() {
+	window.location.href = '/Hardware/index.html';
+});
+
+document.getElementById('softwarebutton').addEventListener('click', function() {
+	window.location.href = '/Software/index.html';
+});
+
+
+
+
+
   
