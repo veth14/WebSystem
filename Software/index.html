@@ -12,15 +12,15 @@
 
     <!-- Navbar  -->
     <nav class="navbar target">
-        <a href="#" class="navbar-link navbar-link-scroll">
+        <a href="/Final Files/index.html" class="navbar-link navbar-link-scroll" id="back">
             <i class="fas fa-backward"></i>
             <span>Back</span>
         </a>
-        <a href="#card-gallery" class="navbar-link navbar-link-scroll">
+        <a href="index.html" class="navbar-link navbar-link-scroll" id="home">
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="/Evolution/index.html#contact" class="navbar-link navbar-link-scroll">
+        <a href="/Evolution/index.html#contact" class="navbar-link navbar-link-scroll" id="contact">
             <i class="fas fa-blender-phone"></i>
             <span>Contact</span>
         </a>
@@ -28,22 +28,22 @@
     <div class="menu target"></div>
     <!-- End of Navbar  -->
 
-        <!-- Section 3 -->
-        <section class="section-3" id="blur">
-            <h1 class="section-heading">Software Components</h1>
+        <!-- Section 1 -->
+        <section class="section-1" id="blur">
+            <h1 class="section-heading">Input Devices</h1>
             <div class="gallery">
                 <div class="gallery-link" onclick="myFunction()" title="Read More">
-                    <img src="images/gallery-img-1.jpg" class="parts-img" />
-                    <h3 class="parts-name">CPU</h3>
+                    <img src="images/white-keyboard-with-lights-high-angle.jpg" class="parts-img" />
+                    <h3 class="parts-name">Keyboard</h3>
                     <p class="parts-description">
-                        A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks.
+                        A keyboard is an input device with a layout of keys, used to type text, issue commands, and provide input to a computer. It may have additional keys and features for various tasks or applications.
                     </p>
                 </div>
                 <div class="gallery-link" onclick="myFunction()" title="Read More">
-                    <img src="images/gallery-img-2.jpg" class="parts-img" />
-                    <h3 class="parts-name">RAM</h3>
+                    <img src="images/working-computer-keyboard-mouse-equipment-generated-by-ai_188544-27976.jpg" class="parts-img" />
+                    <h3 class="parts-name">Mouse</h3>
                     <p class="parts-description">
-                        Random Access Memory (RAM) is a crucial computer component for storing and quickly accessing data that the CPU needs for processing tasks.
+                        A mouse is an input device with buttons and a scroll wheel that lets users move a cursor on a screen, enabling precise interaction with graphical interfaces.
                     </p>
                 </div>
                 <div class="gallery-link" onclick="myFunction()" title="Read More">
@@ -74,11 +74,47 @@
                         A Power Supply Unit (PSU) provides electrical power to a computer, ensuring it operates by converting and delivering electricity to its components.
                     </p>
                 </div>
+                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                    <img src="images/gallery-img-6.jpg" class="parts-img" />
+                    <h3 class="parts-name">PSU</h3>
+                    <p class="parts-description">
+                        A Power Supply Unit (PSU) provides electrical power to a computer, ensuring it operates by converting and delivering electricity to its components.
+                    </p>
+                </div>
             </div>
         </section>
-        <!-- End of Section 3 -->
+        <!-- End of Section 1 -->
 
-        <!-- Contents of Section 3-->
+         <!-- Section 2 -->
+         <section class="section-2" id="blur">
+            <h1 class="section-heading">Output Devices</h1>
+            <div class="gallery">
+                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                    <img src="images/red-gold-headphones-digital-device.jpg" class="parts-img" />
+                    <h3 class="parts-name">Headphones</h3>
+                    <p class="parts-description">
+                        Headphones are a hardware device that can be connected to a computer, laptop, smartphone, or other device for private audio listening, without the need for installation.
+                    </p>
+                </div>
+                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                    <img src="images/view-computer-monitor-display_23-2150757436.jpg" class="parts-img" />
+                    <h3 class="parts-name">Monitor</h3>
+                    <p class="parts-description">
+                        A monitor is a visual display for computer and electronic device output, showing text, graphics, and more, commonly used for tasks like document viewing, gaming, and internet browsing.
+                    </p>
+                </div>
+                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                    <img src="images/glowing-spotlight-illuminating-modern-nightclub-performance-space-generated-by-ai_188544-29706.jpg" class="parts-img" />
+                    <h3 class="parts-name">Speaker</h3>
+                    <p class="parts-description">
+                        Speakers connect to computers for sound output, and they vary in compatibility. Computer speakers work with the sound card to produce sound.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End of Section 2 -->
+
+        <!-- Contents of Section 1-->
     
   <div id="content">
     <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
@@ -113,7 +149,7 @@
       </center>
   </div>
 
-    <div id="content" >
+    <center id="content" >
         <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
         cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
     <center>
@@ -146,29 +182,15 @@
      <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
   </center>
 </div>
+<!-- End of Contents of Section 1-->
 
-    <script>
-       function myFunction() {
-        var blur=document.getElementById('blur');
-        blur.classList.toggle('active');
-        var content = document.getElementById('content');
-        content.classList.toggle('active');
-       }
-       
-       function togglePopup(){
-            document.getElementById("content").classList.toggle('active');
-            document.getElementById('blur').classList.toggle('active');
-        }
+<!-- Section 4 -->
+<section class="section-4">
+    <p class="copyright">Group 1 & 2 - 1F &copy; All rights reserved</p>
+</section>
+<!-- End of Section 4 -->
 
 
-   </script>
-
-        <!-- Section 4 -->
-        <section class="section-4">
-            <p class="copyright">Group 1 & 2 - 1F &copy; All rights reserved</p>
-        </section>
-        <!-- End of Section 4 -->
-        </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

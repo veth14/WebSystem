@@ -51,6 +51,10 @@ document.getElementById('softwarebutton').addEventListener('click', function() {
 	window.location.href = '/Software/index.html';
 });
 
+document.getElementById('toolsbutton').addEventListener('click', function() {
+	window.location.href = '/Tools/index.html';
+});
+
 function myFunction() {
 	var blur=document.getElementById('blur');
 	blur.classList.toggle('active');
