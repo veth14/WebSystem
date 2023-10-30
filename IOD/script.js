@@ -4,21 +4,6 @@ document.querySelector('.menu').addEventListener('click', () => {
 	})
 })
 
-const icons = document.querySelectorAll('.section-1-icons i')
-let i = 1
-
-setInterval(() => {
-	i++
-	const icon = document.querySelector('.section-1-icons .change')
-	icon.classList.remove('change')
-
-	if (i > icons.length) {
-		icons[0].classList.add('change')
-		i = 1
-	} else {
-		icon.nextElementSibling.classList.add('change')
-	}
-}, 4000)
 
 document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -29,4 +14,30 @@ document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
     });
 });
 
-  
+
+document.getElementById('back').addEventListener('click', function() {
+	
+	window.location.href = '/Final Files/index.html';
+});
+
+document.getElementById('home').addEventListener('click', function() {
+	window.location.href = '/home/index.html';
+});
+
+document.getElementById('contact').addEventListener('click', function() {
+	window.location.href = '/Evolution/index.html#contact';
+});
+
+function myFunction() {
+	var blur=document.getElementById('blur');
+	blur.classList.toggle('active');
+	var content = document.getElementById('content');
+	content.classList.toggle('active');
+   }
+   
+   function togglePopup(){
+		document.getElementById("content").classList.toggle('active');
+		document.getElementById('blur').classList.toggle('active');
+	}
+
+

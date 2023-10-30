@@ -29,8 +29,14 @@ document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
     });
 });
 
-
-
+document.getElementById('contact').addEventListener('click', function() {
+	
+	window.location.href = '/Evolution/index.html#contact';
+});
+document.getElementById('home').addEventListener('click', function() {
+	
+	window.location.href = '/home/index.html';
+});
 
 document.getElementById('IObutton').addEventListener('click', function() {
 	
@@ -44,6 +50,19 @@ document.getElementById('hardwarebutton').addEventListener('click', function() {
 document.getElementById('softwarebutton').addEventListener('click', function() {
 	window.location.href = '/Software/index.html';
 });
+
+function myFunction() {
+	var blur=document.getElementById('blur');
+	blur.classList.toggle('active');
+	var content = document.getElementById('content');
+	content.classList.toggle('active');
+   }
+   
+   function togglePopup(){
+		document.getElementById("content").classList.toggle('active');
+		document.getElementById('blur').classList.toggle('active');
+	}
+
 
 
 
