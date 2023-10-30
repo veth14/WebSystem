@@ -222,7 +222,7 @@ html {
 
 .gallery-link:hover .parts-name {
   width: 100%;
-  transition: width 1.5s 0.5s;
+  transition: width 1.0s 0.5s;
 }
 
 .parts-description {
