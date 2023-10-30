@@ -55,3 +55,27 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+document.getElementById('evolution').addEventListener('click', function() {
+	window.location.href = '/Evolution/index.html';
+});
+
+document.getElementById('Explore').addEventListener('click', function() {
+	window.location.href = '/FinalFiles/index.html';
+});
+
+document.getElementById('alan').addEventListener('click', function() {
+	window.location.href = '/ProgLayout/ProgLayout - Aguirre/index.html';
+});
+
+document.getElementById('guido').addEventListener('click', function() {
+	window.location.href = '/ProgLayout/ProgLayout - Aguirre/index.html';
+});
+
+document.getElementById('ada').addEventListener('click', function() {
+	window.location.href = '/ProgLayout/ProgLayout - Aguirre/index.html';
+});
+
+document.getElementById('linux').addEventListener('click', function() {
+	window.location.href = '/ProgLayout/ProgLayout - Aguirre/index.html';
+});

@@ -17,7 +17,7 @@ document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
 
 document.getElementById('back').addEventListener('click', function() {
 	
-	window.location.href = '/Final Files/index.html';
+	window.location.href = '/FinalFiles/index.html';
 });
 
 document.getElementById('home').addEventListener('click', function() {
