@@ -14,4 +14,30 @@ document.querySelectorAll('.navbar-link-scroll').forEach(function (link) {
     });
 });
 
-  
+
+document.getElementById('back').addEventListener('click', function() {
+	
+	window.location.href = '/Final Files/index.html';
+});
+
+document.getElementById('home').addEventListener('click', function() {
+	window.location.href = '/home/index.html';
+});
+
+document.getElementById('contact').addEventListener('click', function() {
+	window.location.href = '/Evolution/index.html#contact';
+});
+
+function myFunction() {
+	var blur=document.getElementById('blur');
+	blur.classList.toggle('active');
+	var content = document.getElementById('content');
+	content.classList.toggle('active');
+   }
+   
+   function togglePopup(){
+		document.getElementById("content").classList.toggle('active');
+		document.getElementById('blur').classList.toggle('active');
+	}
+
+
