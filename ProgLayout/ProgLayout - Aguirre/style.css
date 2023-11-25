@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     background: #222;
+    min-height: 100vh;
 }
 
 .container {
@@ -22,35 +23,84 @@ body {
     border: 1px solid;
     border-color: #d1a618;
     position: absolute;
-    top: 80%;
+    top: 70%;
     border-radius: 25px 25px 16px 16px;    
+    height: 190px;
+    width: 300px;
+    transition: 0.5s;
 }
 
-.container .profile .prof-container{
-    object-fit: contain;
-    width: 290px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .profile .prof-container .border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 215px;
-    border-radius: 118px;
-    overflow: hidden;
+.container .profile .border {
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.15);
+    height: 150px;
+    height: 150px;
+    border-radius: 20px;
     background: #222;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    overflow: hidden;
 }
 
-.container .profile img {
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    border-radius: 100px;
+.profile .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.profile .content .details {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(250px);
+}
+
+.profile:hover .content .details{
+    transform: translateY(0px);
+}
+
+.profile .content .details h2 {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #c9c4c4;
+    line-height: 1.2em;
+}
+
+.profile .content .details h2 span {
+    font-size: 0.75em;
+    opacity: 0.5;
+}
+
+.profile .content .details .profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.profile .content .details .profile-data h3 {
+    font-size: 1em;
+    color: #a8a8a8;
+    line-height: 1.2em;
+    margin: 15px 0 15px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.border img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    color: #ffffff;
+    line-height: 1.2em;
 }
 
 .inv-container {
@@ -119,11 +169,6 @@ body {
     box-shadow: 0 0 35px #fff;
 }
 
-.container .profile h3 {
-    background: #d1a618;
-    text-align: center;
-    border-radius: 25px;
-}
 
 .info {
     position: absolute;
@@ -138,3 +183,12 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.03rem;
 }
+
+.profile:hover {
+    height: 430px;
+    box-shadow: 0 0 35px #d1a618;
+}
+
+
+
+
