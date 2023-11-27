@@ -29,31 +29,31 @@
     <!-- End of Navbar  -->
 
         <!-- Section 1 -->
-        <section class="section-1" id="blur">
+        <section class="section-1">
             <h1 class="section-heading">Hardware</h1>
             <div class="gallery">
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-1" title="Read More">
                     <img src="images/close-up-perforated-fabric.jpg" class="parts-img" />
                     <h3 class="parts-name">Anti-Static Mat</h3>
                     <p class="parts-description">
                         An anti-static floor mat safeguards against electrostatic discharge (ESD) and protects sensitive computer components like motherboards, CPUs, and memory devices.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-2" title="Read More">
                     <img src="images/top-view-ssd-laptop-desk.jpg" class="parts-img" />
                     <h3 class="parts-name">External Hard Drive</h3>
                     <p class="parts-description">
                         External hard drives and NAS (Network-Attached Storages) expand your computer's storage when full. External hard drives are beginner-friendly, while NAS setups are now easy too.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-3" title="Read More">
                     <img src="images/orici-sacramento-768x507.jpg" class="parts-img" />
                     <h3 class="parts-name">Hard Drive Dock</h3>
                     <p class="parts-description">
                         A hard drive docking station lets PC users access their data via a single USB or SATA connection. It blends partition imaging software with external drive enclosure features.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-4" title="Read More">
                     <img src="images/UPS.png" class="parts-img" />
                     <h3 class="parts-name">UPS</h3>
                     <p class="parts-description">
@@ -68,113 +68,136 @@
          <section class="section-2" id="blur">
             <h1 class="section-heading">Software</h1>
             <div class="gallery">
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-5" title="Read More">
                     <img src="images/iobit.png" class="parts-img" />
                     <h3 class="parts-name">IOBit Uninstaller</h3>
                     <p class="parts-description">
                         IObit Uninstaller swiftly removes unwanted software, enhances PC performance, and offers a user-friendly interface with various functions.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-6" title="Read More">
                     <img src="images/open-system-information-windows-10-11-1.png" class="parts-img" />
                     <h3 class="parts-name">S.I.U</h3>
                     <p class="parts-description">
                         System Information Utilities collect and display detailed data on a computer's hardware, software, and components for troubleshooting, upgrades, and system understanding.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-7" title="Read More">
                     <img src="images/cloud-storage-upload-interface-concept.jpg" class="parts-img" />
                     <h3 class="parts-name">Backup Software</h3>
                     <p class="parts-description">
                         Backup software automates file and system data copying to external drives, DVDs, USB, or the cloud. Choose full or incremental backups. Features vary, but most offer essential functions.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-8" title="Read More">
                     <img src="images/07J3Zzrlg7xVwiZgRJLdfju-166.jpg" class="parts-img" />
                     <h3 class="parts-name">W.R.D</h3>
                     <p class="parts-description">
                         Windows Remote Desktop is a feature that allows a user to connect to and control a remote computer as if it were local, capturing its screen, mouse, and keyboard input for remote interaction.
                     </p>
                 </div>
-                <div class="gallery-link" onclick="myFunction()" title="Read More">
+                <div class="gallerylink" data-name="g-9" title="Read More">
                     <img src="images/16813.jpg" class="parts-img" />
                     <h3 class="parts-name">Windows Firewall</h3>
                     <p class="parts-description">
                         Windows Firewall (WFAS) enhances system security through features like authentication, data protection, and firewall rules, guarding against unauthorized access and threats.
                     </p>
                 </div>
-            </div>
+            </div>  
         </section>
         <!-- End of Section 2 -->
 
         <!-- Contents of Section 1-->
     
-  <div id="content">
-    <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-    cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
+        <div class="popup">
+            <div class="contents" data-target="g-1">
+                <i class="fas fa-times"></i>
+                  <center>
+                    <img src="images/iobit.png" width="200px" height="150px" ></br></br>
+                    <h1 style="font-family: Impact"> IObit Uninstaller </h1> </br>
+                    <hr></br>         
+                   <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+                </center>
+            </div>
+            <div class="contents" data-target="g-2">
+                <i class="fas fa-times"></i>
+                <center>
+                  <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+                  <h1 style="font-family: Impact"> System Information Utilities </h1> </br>
+                  <hr></br>         
+                 <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+              </center>
+          </div>
+          <div class="contents" data-target="g-3">
+            <i class="fas fa-times"></i>
+            <center>
+              <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+              <h1 style="font-family: Impact"> Backup Software </h1> </br>
+              <hr></br>         
+             <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+          </center>
+        </div>
+        <div class="contents" data-target="g-4">
+            <i class="fas fa-times"></i>
+            <center>
+              <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+              <h1 style="font-family: Impact"> Window Remote Desktop </h1> </br>
+              <hr></br>         
+             <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+          </center>
+        </div>
+
+<!-- End of Contents of Section 1-->
+
+<!-- Contents of Section 2-->
+
+    <div class="contents" data-target="g-5">
+        <i class="fas fa-times"></i>
           <center>
-            <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
-            <h1 style="font-family: Impact"> CPU </h1> </br>
+            <img src="images/iobit.png" width="200px" height="150px" ></br></br>
+            <h1 style="font-family: Impact"> IObit Uninstaller </h1> </br>
             <hr></br>         
-           <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+           <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
         </center>
     </div>
-
-    <div id="content" >
-        <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-        cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
-          <center>
-            <img src="images/gallery-img-2.jpg" width="200px" height="150px" ></br></br>
-            <h1 style="font-family: Impact"> CPU </h1> </br>
-            <hr></br>         
-           <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
-        </center>
-    </div>
-
-    <div id="content" >
-        <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-        cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
+    <div class="contents" data-target="g-6">
+        <i class="fas fa-times"></i>
         <center>
-          <img src="images/gallery-img-3.jpg" width="200px" height="150px" ></br></br>
-          <h1 style="font-family: Impact"> CPU </h1> </br>
+          <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+          <h1 style="font-family: Impact"> System Information Utilities </h1> </br>
           <hr></br>         
-         <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+         <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
       </center>
   </div>
-
-    <center id="content" >
-        <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-        cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
+  <div class="contents" data-target="g-7">
+    <i class="fas fa-times"></i>
     <center>
-        
-      <img src="images/gallery-img-4.jpg" width="200px" height="150px" ></br></br>
-      <h1 style="font-family: Impact"> CPU </h1> </br>
+      <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+      <h1 style="font-family: Impact"> Backup Software </h1> </br>
       <hr></br>         
-     <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
-   </center>
+     <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+  </center>
+</div>
+<div class="contents" data-target="g-8">
+    <i class="fas fa-times"></i>
+    <center>
+      <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+      <h1 style="font-family: Impact"> Window Remote Desktop </h1> </br>
+      <hr></br>         
+     <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+  </center>
+</div>
+<div class="contents" data-target="g-9">
+    <i class="fas fa-times"></i>
+    <center>
+      <img src="images/gallery-img-1.jpg" width="200px" height="150px" ></br></br>
+      <h1 style="font-family: Impact"> Windows Firewall </h1> </br>
+      <hr></br>         
+     <p style="font-size: 20px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
+  </center>
+</div>
   </div>
 
-  <div id="content" >
-    <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-    cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
-    <center>
-      <img src="images/gallery-img-5.jpg" width="200px" height="150px" ></br></br>
-      <h1 style="font-family: Impact"> CPU </h1> </br>
-      <hr></br>         
-     <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
-  </center>
-</div>
-
-<div id="content">
-    <div class="close" onclick="togglePopup()" style="position: absolute; top: 1rem; right: 1.5rem;
-    cursor: pointer; color:#313131; font-size: 3rem; ">&times; </div>
-    <center>
-      <img src="images/gallery-img-6.jpg" width="200px" height="150px" ></br></br>
-      <h1 style="font-family: Impact"> CPU </h1> </br>
-      <hr></br>         
-     <p style="font-size: 11px;"> A CPU is the core component of a computer that processes instructions and data, controlling its functions and enabling various tasks. </p>
-  </center>
-</div>
 <!-- End of Contents of Section 1-->
 
 <!-- Section 4 -->

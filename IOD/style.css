@@ -153,12 +153,12 @@ html {
   margin-top: 10rem;
 }
 
-.gallery-link {
+.gallerylink {
   position: relative;
   margin: 4rem 1rem;
 }
 
-.gallery-link::before {
+.gallerylink::before {
   content: "";
   position: absolute;
   top: 2vw;
@@ -170,7 +170,7 @@ html {
   transition: height 0.5s;
 }
 
-.gallery-link::after {
+.gallerylink::after {
   content: "";
   position: absolute;
   top: 30%;
@@ -181,11 +181,11 @@ html {
   transition: width 0.5s;
 }
 
-.gallery-link:hover::before {
+.gallerylink:hover::before {
   height: 80%;
 }
 
-.gallery-link:hover::after {
+.gallerylink:hover::after {
   width: 90%;
 }
 
@@ -198,7 +198,7 @@ html {
   transition: all 0.5s;
 }
 
-.gallery-link:hover .parts-img {
+.gallerylink:hover .parts-img {
   box-shadow: 1rem 1rem 0.1rem #6caadd, 2rem 2rem 0.1rem #a2e946,
     3rem 3rem 0.1rem #297ce9, 4rem 4rem 0.1rem #e92999;
   transform: scale(1.1);
@@ -220,7 +220,7 @@ html {
   transition: width 0.3s;
 }
 
-.gallery-link:hover .parts-name {
+.gallerylink:hover .parts-name {
   width: 100%;
   transition: width 1.0s 0.5s;
 }
@@ -240,7 +240,7 @@ html {
   transition: opacity 0.3s;
 }
 
-.gallery-link:hover .parts-description {
+.gallerylink:hover .parts-description {
   opacity: 1;
   visibility: visible;
   transition: opacity 1s 1s;
@@ -289,24 +289,55 @@ html {
 
 /* Contents */
 
-#content{
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  padding: 50px;
-  box-shadow: 0 5px 30px rgba (0,0,0, .30);
-  background: #727272;
-  visibility: hidden;
-  }
 
-#content.active{
-  top: 50%;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.3s;
+.popup{
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
+
+.popup .contents{
+  display: none;
+  padding:5rem;
+  text-align: center;
+  background: #727272;
+  position: relative;
+  margin:2rem;
+  width: 1000px;
+  height: 1000px;
+
+}
+
+.popup .contents.active{
+  display: inline-block;
+}
+
+.popup .contents .fa-times{
+  position: absolute;
+  top:1rem; right:1.5rem;
+  cursor: pointer;
+  color:#444;
+  font-size: 4rem;
+}
+
+.popup .contents h1{
+  color:#444;
+  padding:.5rem 0;
+  font-size: 2.5rem;
+}
+
+.popup .contents p{
+  line-height: 1.5;
+  padding:1rem 0;
+  font-size: 5rem;
+  color:#ffffff;
+}
+
 
 /* Contents */
 
@@ -320,7 +351,7 @@ html {
     height: auto;
   }
 
-  .gallery-link {
+  .gallerylink {
     width: 40rem;
     height: 25rem;
     margin: 5rem;
