@@ -28,16 +28,27 @@ document.getElementById('contact').addEventListener('click', function() {
 	window.location.href = '/Evolution/index.html#contact';
 });
 
-function myFunction() {
-	var blur=document.getElementById('blur');
-	blur.classList.toggle('active');
-	var content = document.getElementById('content');
-	content.classList.toggle('active');
-   }
-   
-   function togglePopup(){
-		document.getElementById("content").classList.toggle('active');
-		document.getElementById('blur').classList.toggle('active');
-	}
 
 
+let preveiwContainer = document.querySelector('.popup');
+let previewBox = preveiwContainer.querySelectorAll('.contents');
+
+document.querySelectorAll('.gallery .gallerylink').forEach(gallerylink =>{
+  gallerylink.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = gallerylink.getAttribute('data-name');
+    previewBox.forEach(contents =>{
+      let target = contents.getAttribute('data-target');
+      if(name == target){
+        contents.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-times').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+});

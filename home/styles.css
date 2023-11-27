@@ -521,13 +521,13 @@
   justify-content: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-  url(/images/ada.jpg) center no-repeat;
+  url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTogDFxJl3NEvkzlncPxbJ7lZS-JceDAzjgQ1d9nvUx21SSaa) center no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 0;
+  background-position: center;
+  padding: 40px 40px;
+  justify-content: flex-end;
 }
 
 .services__card:nth-child(2) {
@@ -540,13 +540,13 @@
   justify-content: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-  url(/images/alan.jpg) center no-repeat;
+  url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/640px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg) center no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 0;
+  background-position: center;
+  padding: 40px 40px;
+  justify-content: flex-end;
 }
 
 .services__card:nth-child(3) {
@@ -559,13 +559,13 @@
   justify-content: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-  url(/images/guido.jpg) center no-repeat;
+  url(https://upload.wikimedia.org/wikipedia/commons/e/e2/Guido-portrait-2014-drc.jpg) center no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 0;
+  background-position: center;
+  padding: 40px 40px;
+  justify-content: flex-end;
 }
 .services__card:nth-child(4) {
   margin: 10px;
@@ -577,39 +577,35 @@
   justify-content: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-  url(/images/linux.jpg) center no-repeat;
+  url(https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg) center no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin-bottom: 0;
+  padding: 40px 40px;
+  justify-content: flex-end;
 }
 
 .services__card h2 {
-  text-align: center;
+  font-weight: 500;
 }
 
 .services__card p {
-  text-align: center;
-  margin-top: 24px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 .services__btn {
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .services__card button {
+  width: 150px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-top: 10px;
   color: #fff;
-  padding: 14px 24px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #131313;
-  font-size: 1rem;
 }
 
 .services__card button:hover {
