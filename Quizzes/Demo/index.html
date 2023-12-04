@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz - WebSys</title>
+</head>
+<body>
+    <div class="home custom-home ">
+        <h3>INSTRUCTIONS:</h3>
+        <p>Total Number of Questions: <span class="total-no">5</span></p>
+        <button type="button" class="btn" onclick="startQuiz()">IKUZOO! ! !</button>
+    </div>
+    <div class="quiz custom-home hide" >
+        <div class="question-num">
+            <!-- Question 1 of 5 -->
+        </div>
+        <div class="question-bx">
+            <!-- Very first female programmer that invented the Binary? -->
+        </div>
+        <div class="option-cont">
+            <!-- <div class="options">Ada Wong</div>
+            <div class="options">Ada August</div>
+            <div class="options">Ada Lovelace</div>
+            <div class="options">Ada Loveme</div> -->
+        </div>
+        <div class="nxt-question-btn">
+            <button type="button" class="btn" onclick="next()">
+                NEXT
+            </button>
+        </div>
+        <div class="ans-indicator">
+            <!-- <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> -->
+        </div>
+    </div>
+    <div class="result custom-home hide">
+        <h1> QUIZ RESULT</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Attempts</td>
+                <td><span class="total-attempts"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="total-percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgain()">Try Again</button>
+        <button type="button" class="btn" onclick="goHome()">Fuckin Surrender</button>
+    </div>
+
+
+
+    <script src="ques.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
