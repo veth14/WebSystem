@@ -1,0 +1,775 @@
+footer {
+    background-color: rgb(66, 63, 63);
+    text-align: center;
+}
+* {
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#rectangle2 {
+    width: 800px;
+    height: 315px;
+    top:60px;
+    position:relative;
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    left: 190px;
+    background-color: rgb(66, 63, 63);
+    box-shadow: 3px 3px 5px black;
+    font-size: 20px;
+    color: wheat;
+    transition: all .5s ease;
+}
+
+
+
+.wrapper {
+    display :flex;
+    width: 85vmin;
+    
+    
+}
+.oblong {
+    border: 2px gold solid;
+     width:60%;
+     height:470px;
+     border-radius: 640px;
+     position: relative;
+     margin-top: -450px;
+     margin-left: 19%;
+     display: flex;
+     overflow: hidden;
+     transition: 2s;
+     background-color: black;
+}
+.oblong:hover{
+    box-shadow: 0 0 25px goldenrod,
+    0 0 30px goldenrod,
+    0 0 40px goldenrod,
+    0 0 50px goldenrod;
+    transition: 2s;
+
+}
+.imgd {
+    width: 870px;
+    height: 850px;
+    position: relative;
+    
+    
+}
+.wrapper:hover {
+width:100%;
+animation: slide 30s infinite;
+}
+
+
+
+@keyframes slide {
+   
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-110%);
+    }
+    50% {
+        transform: translateX(-220%);
+    }
+    75% {
+        transform: translateX(-330%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+   
+}
+
+
+#img1 {
+    width: 250px;
+    height: 240px;
+    border-radius: 500px;
+    position:relative;
+    margin-top: -22%;
+    left:20.4%;
+    border-color: gold;
+    border: 2px gold solid;
+    transition: box-shadow 2s;
+}
+
+#rectangle3 {
+    width: 1100px;
+    height: 390px;
+    top: 150px;
+    left: 150px;
+    position: relative;
+    border-radius: 25px;
+    background-color: rgb(66, 63, 63);
+    box-shadow: 3px 3px 5px black;
+    font-size: 23px;
+    color: wheat;
+    transition: all .5s ease;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+
+
+body {
+    background-color: rgb(39, 32, 5);
+}
+#name {
+    font-style: oblique;
+    position:relative;
+    width: 17%;
+    margin-top: -2%;
+    left: 20.5%;
+    border-radius: 100px;
+    background-color: goldenrod;
+    color: black;
+    border: 2px gold solid;
+    text-align: center;
+    font-size: 20px;
+    transition: box-shadow 2s;
+}
+
+#inv {
+    border: 2px gold solid;
+    position: relative;
+    margin-top:-510px;
+    left: 40.5%;
+    border-radius: 100px;
+    background-color: goldenrod;
+    width: 250px;
+    
+}
+#inv p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#name1{ 
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+    
+    
+}
+#stats {
+    border: 1px gold solid;
+    width: 228px;
+    height: 20px;
+    top: 83.5%;
+    left: 15.5%;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    color: wheat;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.icons{
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+
+}
+
+
+#sample {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 50px;
+
+}
+.profile:hover ~ #stats{
+opacity: 1;
+
+
+}
+.profile {
+
+    margin-left: -40px;
+    
+
+
+}
+
+.profile:hover {
+
+    transition: 2s;
+}
+
+#name:hover ~ #stats {
+
+    transition: 0.5s;
+    opacity: 1;
+    height:300px;
+}
+#img1:hover ~ #stats {
+    opacity: 1;
+
+    transition: 0.5s;
+    height: 300px;
+
+}
+
+.parallax {
+    background: url(machine2.0.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 10px;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    border-radius: 50PX;
+}
+.imgm {
+    position: absolute;
+    pointer-events: none;
+    
+}
+#clock {
+    transform: translateX(-80px);
+    top: 50px;
+   
+}
+#time {
+    transform: translateX(950px);
+    
+}
+
+.parallax img{
+    top: 100px;
+    height: 400px;
+}
+
+.friends {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px goldenrod solid;
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    
+    
+}
+.sidebar {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+    left: -390px;
+    background: linear-gradient(50deg,goldenrod, rgb(88, 78, 23));
+    top: 10px;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    transition: all .5s ease;
+    z-index: 1;
+}
+.sidebar header {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(199, 170, 5);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 2px solid(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+
+}
+
+ul li:hover a {
+    padding-left: 50px;
+
+}
+.sidebar ul a div {
+    margin-right: 16px;
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel {
+    position: fixed;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 1;
+
+}
+label #btn {
+    left:-130px;
+    top: 60px;
+    font-size: 20px;
+    color:white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+.btnp {
+
+    width: 259px;
+    z-index: 2;
+    margin-left: -315px;   
+    height: 40px;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.btnp p {
+    margin-top: 5px;
+}
+#btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 500px;
+    overflow: hidden;
+}
+
+#btn img {
+    height: 100px;
+    width: 350px;  
+}
+label #cancel {
+    z-index:1111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color: black;
+    transition: all .5s ease;
+    padding: 4px 9px;
+}
+
+#check:checked ~ .sidebar {
+    left:0;
+}
+
+#check:checked ~ label #cancel {
+    left:320px;
+
+}
+#check:checked ~ label #btn {
+    left:320px;
+    opacity: 0;
+
+}
+
+
+
+section{
+transition: all .5s ease;
+}
+
+#check:checked ~ section {
+    transform: perspective(200px) translateZ(-50px)
+
+}
+
+.cover {
+    width: 50%;
+    height: 590px;
+    left: -1400px;
+    top: 100px;
+    position: absolute;
+    z-index: 3;
+    
+}
+
+#check:checked ~ .cover {
+    left: 359px;
+    top: 90px;
+    
+}
+
+.Herman {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Herman img {
+    width: 400px;
+    height: 210px;
+    
+}
+
+.herman:hover .Herman {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profh {
+    position: absolute;
+    overflow:hidden;
+
+}
+.friends img {
+    width:50px;
+    height: 50px;
+   border-radius: 100px;
+}
+
+.Blaise {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Blaise img {
+    width: 400px;
+    height: 210px;
+    margin-top: -50px;
+    
+}
+
+.blaise:hover .Blaise {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profb {
+    position: absolute;
+    overflow:hidden;
+
+}
+.Gottfried {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Gottfried img {
+    width: 400px;
+    height: 210px;
+    
+}
+
+.gottfried:hover .Gottfried {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profg {
+    position: absolute;
+    overflow:hidden;
+
+}
+
+.Joseph {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Joseph img {
+    width: 400px;
+    height: 210px;
+    
+}
+
+.joseph:hover .Joseph {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profj {
+    position: absolute;
+    overflow:hidden;
+
+}
+
+.Augusta {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Augusta img {
+    width: 400px;
+    height: 210px;
+    margin-top: -70px;
+    
+}
+
+.augusta:hover .Augusta {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profa {
+    position: absolute;
+    overflow:hidden;
+
+}
+
+.Alexander {
+    margin-left: -500px;
+    width: 400px;
+    height: 78px;
+    margin-top: -78px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Alexander img {
+    width: 400px;
+    height: 210px;
+    margin-top: -70px;
+    
+}
+
+.alexander:hover .Alexander {
+    margin-left:-90px;
+    opacity:0.4;
+}
+
+.profA {
+    position: absolute;
+    overflow:hidden;
+
+}
+
+
+ul li:hover a {
+    text-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 75px whitesmoke
+    ;
+    transition: all .5s ease;
+    text-decoration: underline;
+
+    
+    
+    
+}
+
+ul li a {
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 15px 100px;
+    width: 100%;
+    height: 25px;
+    z-index: 1;
+    position: fixed;
+    background: linear-gradient(50deg, black, goldenrod, gold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none;
+}
+
+.view {
+    margin-left: -200px;
+    padding-left: 20px;
+}
+.logo {
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: -60px;
+    user-select: none;
+    cursor:default;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 1000;
+    color: white;
+    
+}
+
+.bio {
+    color: goldenrod;
+}
+
+.early {
+    color:goldenrod
+}
+
+.diife {
+    color: goldenrod;
+}
+
+.anale {
+    color: goldenrod;
+}
+
+.london {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute; 
+    overflow: hidden;
+   z-index: -1;
+    border-radius: 10px;
+    top: 50px;
+    transition: all 1s ease;
+    margin-left: 10px;
+    
+    
+}
+
+.london img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.bios {
+    user-select: none ;
+    z-index: -1;
+    box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod;
+}
+
+#rectangle2:hover .london {
+        margin-left: -250px
+}
+
+#rectangle2:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod;
+}
+
+.differenceengine {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute; 
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 10px;
+    top: 50px;
+    transition: all 1s ease;
+    margin-left: 10px;
+    margin-top: -50px;
+    
+}
+
+
+.differenceengine img {
+    width: 100%;
+    height: 100%;
+}
+
+#rectangle4 {
+    width: 1100px;
+    height: 220px;
+    margin-top: -5%;
+    left: 150px;
+    position: relative;
+    border-radius: 25px;
+    background-color: rgb(66, 63, 63);
+    font-size: 23px;
+    color: wheat;
+    transition: all .5s ease;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#rectangle3:hover .differenceengine {
+    margin-top: -260px;
+    box-shadow: 0 0 5px black, 0 0 25px black;
+}
+#stats p {
+    font-size: 22px;
+}
+
+.analyticalengine {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: -325px;
+    margin-left: 10px;
+    z-index: -1;
+    transition: all 1s ease;
+    border-radius: 5px;
+}
+
+.analyticalengine img {
+    width: 100%;
+    height: 100%;
+}
+
+#rectangle4:hover .analyticalengine {
+    margin-top: -550px;
+    box-shadow: 0 0 5px whitesmoke, 0 0 25px whitesmoke;
+}
